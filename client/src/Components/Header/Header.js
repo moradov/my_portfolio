@@ -31,7 +31,7 @@ const Header = () => {
         nav.style.position = 'fixed';
         nav.style.top = 0;
       } else {
-        nav.style.position = 'unset';
+        nav.style.position = 'relative';
       }
 
       //chek each element when gets show in the screen set the active link
