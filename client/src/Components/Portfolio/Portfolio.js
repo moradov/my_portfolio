@@ -22,7 +22,7 @@ class Portfolio extends Component {
     this.setState({ loading: true });
     this.setState({ err: false });
     axios
-      .get('/api')
+      .get('/api/projects')
       .then(res => {
         this.setState({ loading: false });
         this.setState({ portfolioData: res.data });

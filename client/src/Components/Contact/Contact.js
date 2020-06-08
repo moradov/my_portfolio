@@ -19,7 +19,7 @@ const Contact = () => {
   const setUserMessage = data => {
     setLoading(true);
     axios
-      .post('/api', data)
+      .post('/api/message', data)
       .then(res => {
         setLoading(false);
         alertHulper('Your message was sent', 5000, 'success');
