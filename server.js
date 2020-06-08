@@ -1,7 +1,27 @@
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
 const { check, validationResult } = require('express-validator');
+const bodyParser = require('body-parser');
+
+// database models
+const Project = require('./model/Project');
+const Message = require('./model/Message');
+
+// init the app
+const app = express();
+
+// Init Middlewares
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+app.use(bodyParser.json());
+let allowCrossDomain = (req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+};
+app.use(allowCrossDomain);
 
 //connect to the data base
 mongoose
@@ -22,22 +42,8 @@ mongoose
     process.exit(1);
   });
 
-const Project = require('./model/Project');
-const Message = require('./model/Message');
-
-// // Init Middlewares
-app.use(express.json({ extended: false }));
-let allowCrossDomain = (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
-};
-app.use(allowCrossDomain);
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log('the server work at port ' + PORT));
-app.get('/api', async (req, res) => {
+// app Routes
+app.get('/api/projects', async (req, res) => {
   try {
     const projects = await Project.find();
     res.status(200).json(projects);
@@ -47,7 +53,7 @@ app.get('/api', async (req, res) => {
 });
 
 app.post(
-  '/api',
+  '/api/message',
   [
     check('name')
       .isString()
@@ -84,3 +90,14 @@ app.post(
     }
   }
 );
+// Server static assets if in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log('the server work at port ' + PORT));
