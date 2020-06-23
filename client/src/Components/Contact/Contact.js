@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 const Contact = () => {
   const [inputsValues, SetInputsValues] = useState({
@@ -47,7 +47,7 @@ const Contact = () => {
     <section className='contact-me' id='contact'>
       <div className='sec-content'>
         <h2>Contact</h2>
-        <p>you can leave a message here if you want to work together</p>
+        <p>You can leave a message here if you want to work with me (: </p>
         <form onSubmit={e => inputSubmit(e)}>
           <input
             type='text'

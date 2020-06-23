@@ -99,13 +99,13 @@ const Header = () => {
       <nav id='nav'>
         <ul>
           <li
-            className={active == 'home' ? 'active' : null}
+            className={active === 'home' ? 'active' : null}
             onClick={() => window.scrollTo(0, 0)}
           >
             Home
           </li>
           <li
-            className={active == 'about' ? 'active' : null}
+            className={active === 'about' ? 'active' : null}
             onClick={
               scrollingPosition.about
                 ? () => window.scrollTo(0, scrollingPosition.about)
@@ -115,7 +115,7 @@ const Header = () => {
             About
           </li>
           <li
-            className={active == 'projects' ? 'active' : null}
+            className={active === 'projects' ? 'active' : null}
             onClick={
               scrollingPosition.projects
                 ? () => window.scrollTo(0, scrollingPosition.projects)
@@ -125,7 +125,7 @@ const Header = () => {
             Projects
           </li>
           <li
-            className={active == 'contact' ? 'active' : null}
+            className={active === 'contact' ? 'active' : null}
             onClick={
               scrollingPosition.contact
                 ? () => window.scrollTo(0, scrollingPosition.contact)

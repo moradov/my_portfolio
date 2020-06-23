@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ProjectItem from '../PojectItem/ProjectItem';
 const PortProjects = ({ projects, active }) => {
   let renderdHTML = [];
+  // eslint-disable-next-line
   if (active === 'ALL' && projects) {
     renderdHTML = projects.map(el => (
       <ProjectItem project={el} key={el.name} />
