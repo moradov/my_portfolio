@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Erorr = ({ tryAgainClicked }) => {
   const loadAgainBtn = {
@@ -25,5 +26,7 @@ const Erorr = ({ tryAgainClicked }) => {
     </div>
   );
 };
-
 export default Erorr;
+Erorr.propTypes = {
+  tryAgainClicked: PropTypes.func.isRequired
+};

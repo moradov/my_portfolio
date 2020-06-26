@@ -14,10 +14,11 @@ class Portfolio extends Component {
     loading: true,
     err: false
   };
+  // when the dom is done make a async call
   componentDidMount() {
     this.getPortFolioData();
   }
-
+  // connect with backen API and set data in the state
   getPortFolioData = () => {
     this.setState({ loading: true });
     this.setState({ err: false });
@@ -32,6 +33,7 @@ class Portfolio extends Component {
         this.setState({ err: true });
       });
   };
+  // load again func if something went wrong
   loadAgainHund = () => {
     this.getPortFolioData();
   };
@@ -39,8 +41,6 @@ class Portfolio extends Component {
     this.setState({ active: value });
   };
   render() {
-    //projects data
-
     return (
       <section className='portfolio-sec' id='projects'>
         <PortHund

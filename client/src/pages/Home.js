@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import './Home.css';
 import Header from '../Components/Header/Header';
 import Portfolio from '../Components/Portfolio/Portfolio';
 import About from '../Components/About/About';

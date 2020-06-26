@@ -1,8 +1,9 @@
-/// portfolio controler allows us switch between projects types(deisgn bloogs..)
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+/// portfolio controler allows the user to switch between projects types(deisgn bloogs..)
 const PortHund = ({ active, activeStateHund }) => {
   // portfolio sections types
-  const portfolioSections = ["ALL", "PROJECT", "DESIGN", "BLOGS"];
+  const portfolioSections = ['ALL', 'PROJECT', 'DESIGN', 'BLOGS'];
   return (
     <div className='portfolio-hund '>
       <div className='left'>
@@ -11,9 +12,9 @@ const PortHund = ({ active, activeStateHund }) => {
       <div className='right'>
         <ul className='browse-sec'>
           {/* map through sections and render them   */}
-          {portfolioSections.map((element) => (
+          {portfolioSections.map(element => (
             <li
-              className={active === element ? "active" : null}
+              className={active === element ? 'active' : null}
               onClick={() => activeStateHund(element)}
               key={element}
             >
@@ -25,5 +26,8 @@ const PortHund = ({ active, activeStateHund }) => {
     </div>
   );
 };
-
 export default PortHund;
+PortHund.propTypes = {
+  active: PropTypes.string.isRequired,
+  activeStateHund: PropTypes.func.isRequired
+};

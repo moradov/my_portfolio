@@ -35,9 +35,5 @@
       "last 1 ie version"
     ]
   },
-  "proxy": "http://localhost:5000",
-  "devDependencies": {
-    "autoprefixer": "^9.8.4",
-    "cross-env": "^7.0.2"
-  }
+  "proxy": "http://localhost:5000"
 }
