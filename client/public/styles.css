@@ -32,14 +32,8 @@ header .header-content {
   width: 100%;
   height: 100vh;
   background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 header .header-background {
@@ -52,15 +46,8 @@ header .header-background {
   z-index: -3;
 }
 header .header-content .main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
@@ -91,8 +78,6 @@ nav {
 }
 nav ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
 }
@@ -134,12 +119,8 @@ nav ul li li {
   min-height: 100vh;
 }
 .portfolio-sec .portfolio-hund {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 48%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 60px 140px auto;
   margin-bottom: 41px;
@@ -147,8 +128,6 @@ nav ul li li {
 .portfolio-sec .portfolio-hund .right ul {
   margin-top: 4px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .portfolio-sec .portfolio-hund .left {
@@ -168,9 +147,7 @@ nav ul li li {
   color: orange;
 }
 .port-projects {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(294px, 1fr)) [auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(294px, 1fr));
   grid-auto-rows: 274px;
   grid-gap: 1.5rem;
@@ -184,15 +161,8 @@ nav ul li li {
   width: 100%;
   height: 100%;
   background-color: orange;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 20px;
 }
@@ -225,9 +195,7 @@ nav ul li li {
   padding-top: 142px;
 }
 .about-page .features-list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(254px, 1fr)) [auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(254px, 1fr));
   grid-auto-rows: 274px;
   grid-gap: 21px;
@@ -245,22 +213,13 @@ nav ul li li {
   color: orange;
 }
 .about-page .about-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .about-me {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0px 50px;
   margin-bottom: 30px;
@@ -280,13 +239,9 @@ nav ul li li {
 }
 
 .progress-bar-sec .progress-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
   background-color: orange;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 24px;
 }
@@ -300,11 +255,7 @@ nav ul li li {
 .progress-bar-sec .progress-bar .persont {
   background-color: #ece9e6;
   color: #797979;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   padding-right: 6px;
   padding-left: 8px;
@@ -313,27 +264,14 @@ nav ul li li {
 .contact-me {
   width: 100%;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 51px 0px;
 }
 .contact-me .sec-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .contact-me .sec-content h2 {
@@ -349,12 +287,7 @@ nav ul li li {
   color: orange;
 }
 .contact-me .sec-content form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .contact-me .sec-content form input,
@@ -367,18 +300,6 @@ nav ul li li {
   color: orange;
   font-size: 14px;
 }
-.contact-me .sec-content form input::-webkit-input-placeholder,
-.contact-me .sec-content form textarea::-webkit-input-placeholder {
-  color: rgb(110, 110, 110);
-}
-.contact-me .sec-content form input::-moz-placeholder,
-.contact-me .sec-content form textarea::-moz-placeholder {
-  color: rgb(110, 110, 110);
-}
-.contact-me .sec-content form input:-ms-input-placeholder,
-.contact-me .sec-content form textarea:-ms-input-placeholder {
-  color: rgb(110, 110, 110);
-}
 .contact-me .sec-content form input::placeholder,
 .contact-me .sec-content form textarea::placeholder {
   color: rgb(110, 110, 110);
@@ -390,15 +311,12 @@ nav ul li li {
   width: 99px;
   text-align: center;
   color: #fff;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
   padding: 9px 15px;
   font-size: 20px;
   border: 2px solid orange;
   background: none;
   cursor: pointer;
-  -webkit-transition: all 0.4s 0.25s ease-in-out;
   transition: all 0.4s 0.25s ease-in-out;
   margin-top: 21px;
 }
@@ -412,35 +330,17 @@ nav ul li li {
   width: 100%;
   background-color: orange;
   padding-top: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .footer .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .footer .footer-content .scrool-top {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
   background-color: black;
   padding: 13px 11px;
@@ -448,7 +348,6 @@ nav ul li li {
   margin-left: 10px;
 }
 .footer .footer-content .scrool-top i {
-  -webkit-transform: rotateZ(-90deg);
   transform: rotateZ(-90deg);
   font-size: 29px;
 }
@@ -456,9 +355,8 @@ nav ul li li {
 .footer .footer-content ul {
   margin: 44px 0px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  padding-left: 0px !important ;
 }
 .footer .footer-content ul li {
   margin-left: 9px;
@@ -473,8 +371,6 @@ nav ul li li {
   font-size: 27px;
 }
 .footer .copy-right {
-  -ms-flex-item-align: normal;
-  -ms-grid-row-align: normal;
   align-self: normal;
   text-align: center;
   background-color: #444343;
@@ -499,9 +395,6 @@ nav ul li li {
     width: 60%;
   }
   .about-div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .about-me {
@@ -514,9 +407,6 @@ nav ul li li {
 
 @media only screen and (max-width: 600px) {
   .portfolio-sec .portfolio-hund {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin: 29px 43px auto;
   }
@@ -531,7 +421,6 @@ nav ul li li {
 
 @media only screen and (max-width: 400px) {
   .port-projects {
-    -ms-grid-columns: (minmax(190px, 1fr)) [auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   }
   .portfolio-sec .portfolio-hund .right ul li {
@@ -542,12 +431,10 @@ nav ul li li {
     width: 100%;
   }
   .about-page .features-list {
-    -ms-grid-columns: (minmax(205px, 1fr)) [auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
     padding-bottom: 4px;
   }
   .about-page .about-div {
-    -ms-grid-columns: (minmax(316px, 1fr)) [auto-fill];
     grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
   }
   .progress-bar-sec {
@@ -583,6 +470,7 @@ nav ul li li {
   margin: 72px auto;
   position: relative;
   -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
   animation: load6 1.7s infinite ease, round 1.7s infinite ease;

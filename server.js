@@ -6,18 +6,7 @@ const connectDB = require('./config/db');
 const projectsRoute = require('./routes/projects');
 const messageRoute = require('./routes/message');
 
-// Init Middlewares
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
-// let allowCrossDomain = (req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-//   res.header('Access-Control-Allow-Headers', 'Content-Type');
-//   next();
-// };
-// app.use(allowCrossDomain);
-
+//database connection
 connectDB();
 
 // app Routes
